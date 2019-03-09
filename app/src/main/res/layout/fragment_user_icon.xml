@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fragments.AddingFoodFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/frame"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/user_icon_picking"
+            android:textColor="#000000"
+            android:background="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/icon_1"
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/frame"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/tree"
+                    android:padding="3dp"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:id="@+id/icon_2"
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/frame"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/sunglasses"
+                    android:padding="3dp"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/icon_3"
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/frame"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/dog"
+                    android:padding="3dp"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:id="@+id/icon_4"
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/frame"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/cat"
+                    android:padding="3dp"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/icon_5"
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/frame"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ghost"
+                    android:padding="3dp"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:id="@+id/icon_6"
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/frame"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/monkey"
+                    android:padding="3dp"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

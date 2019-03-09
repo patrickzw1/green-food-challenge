@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_community"
+            android:icon="@drawable/ic_home"
+            android:title="Community"/>
+        <item
+            android:id="@+id/menu_user"
+            android:icon="@drawable/ic_user"
+            android:title="User profile"/>
+
+        <item
+            android:id="@+id/menu_calculator"
+            android:icon="@drawable/calculator"
+            android:title="CO2e calculator"/>
+        <item
+            android:id="@+id/menu_meal"
+            android:icon="@drawable/ic_meal"
+            android:title="Green Meals"/>
+
+        <item
+            android:id="@+id/menu_about"
+            android:icon="@drawable/about_icon"
+            android:title="About CO_2e"/>
+        <item
+            android:id="@+id/menu_pledge"
+            android:icon="@drawable/shield"
+            android:title="Pledge"/>
+        <item
+            android:id="@+id/menu_result"
+            android:icon="@drawable/result"
+            android:title="Result"/>
+        <item
+            android:id="@+id/menu_suggestion"
+            android:icon="@drawable/chat"
+            android:title="Suggestion"/>
+    </group>
+
+    <item android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/menu_Login"
+                android:icon="@drawable/ic_login"
+                android:title="Log in/Switch user"/>
+            <item
+                android:id="@+id/menu_LogOff"
+                android:icon="@drawable/ic_exit"
+                android:title="Log off"/>
+            <item
+                android:id="@+id/menu_facebook"
+                android:title="Share to facebook"
+                android:icon="@drawable/facebook"/>
+        </menu>
+    </item>
+
+</menu>

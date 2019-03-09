@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RestaurantFragment"
+    android:background="@drawable/background"
+    android:paddingTop="5dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/meal_1_button"
+            style="@style/NiceButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:text="Meal 1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/meal_2_button"
+            style="@style/NiceButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Meal 2"
+            app:layout_constraintEnd_toStartOf="@+id/meal_3_button"
+            app:layout_constraintStart_toEndOf="@+id/meal_1_button"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/meal_3_button"
+            style="@style/NiceButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:text="Meal 3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/meal_delete"
+            style="@style/NiceButtonRed"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/delete_meal"
+            app:layout_constraintEnd_toStartOf="@+id/restaurant_title"
+            app:layout_constraintTop_toBottomOf="@+id/meal_1_button" />
+
+
+        <TextView
+            android:id="@+id/restaurant_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/restaurant_title1"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meal_1_button" />
+
+        <ImageView
+            android:id="@+id/meal_edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/pencil"
+            app:layout_constraintStart_toEndOf="@+id/restaurant_title"
+            app:layout_constraintTop_toBottomOf="@+id/meal_1_button" />
+
+        <ImageView
+            android:id="@+id/meal_edit_confirm"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/check"
+            app:layout_constraintStart_toEndOf="@+id/restaurant_title"
+            app:layout_constraintTop_toBottomOf="@+id/meal_1_button" />
+
+        <TextView
+            android:id="@+id/restaurant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/restaurant_name"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurant_title" />
+
+        <EditText
+            android:id="@+id/restaurant_name_edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:maxLength="20"
+            android:hint="Restaurant"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toEndOf="@+id/restaurant_name"
+            app:layout_constraintTop_toBottomOf="@+id/restaurant_title" />
+
+        <TextView
+            android:id="@+id/meal_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/meal_name"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location_spinner" />
+
+        <EditText
+            android:id="@+id/meal_name_edit"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:hint="Meal"
+            android:maxLength="20"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/meal_name"
+            app:layout_constraintTop_toBottomOf="@+id/location_spinner" />
+
+
+        <TextView
+            android:id="@+id/main_ingredient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/main_ingredient"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meal_name" />
+
+        <Spinner
+            android:id="@+id/main_ingredient_spinner"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:entries="@array/ingredient_name"
+            app:layout_constraintStart_toEndOf="@+id/main_ingredient"
+            app:layout_constraintTop_toBottomOf="@+id/meal_name" />
+
+        <TextView
+            android:id="@+id/description_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/description_text"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_ingredient" />
+
+        <EditText
+            style="@style/RectangleShortRounded"
+            android:id="@+id/description_edit"
+            android:layout_width="340dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:hint="Description (150 characters max.)"
+            android:maxLength="150"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description_text" />
+
+
+        <Spinner
+            android:id="@+id/location_spinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:entries="@array/city_array"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurant_name" />
+
+
+        <TextView
+            android:id="@+id/add_photo_text"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:text="@string/add_photo"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description_edit" />
+
+        <ImageView
+            android:id="@+id/gallery_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/gallery"
+            app:layout_constraintEnd_toStartOf="@+id/camera_button"
+            app:layout_constraintTop_toBottomOf="@+id/add_photo_text" />
+
+        <ImageView
+            android:id="@+id/camera_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/camera"
+            app:layout_constraintEnd_toStartOf="@+id/reset_button"
+            app:layout_constraintTop_toBottomOf="@+id/add_photo_text" />
+
+        <ImageView
+            android:id="@+id/reset_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/reset"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_photo_text" />
+
+
+        <ImageView
+            android:id="@+id/final_photo"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/android"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description_edit" />
+
+        <ImageView
+            android:id="@+id/speech_bubble"
+            android:layout_width="120dp"
+            android:layout_height="102dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            android:rotation="40"
+            android:scaleType="fitXY"
+            android:src="@drawable/speech"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.214"
+            app:layout_constraintStart_toEndOf="@+id/final_photo"
+            app:layout_constraintTop_toBottomOf="@+id/description_edit" />
+
+        <TextView
+            android:id="@+id/speech_bubble_text"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:rotation="40"
+            android:scaleType="fitXY"
+            android:text="@string/why_not"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/speech_bubble"
+            app:layout_constraintEnd_toEndOf="@+id/speech_bubble"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/speech_bubble"
+            app:layout_constraintTop_toTopOf="@+id/speech_bubble"
+            app:layout_constraintVertical_bias="0.666" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

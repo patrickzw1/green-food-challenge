@@ -1,0 +1,276 @@
+<resources>
+    <string name="app_name">Green Food Challenge</string>
+
+    <string name="Navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="Navigation_drawer_close">Close Navigation Drawer</string>
+
+    <string name="welcome">Welcome to your very own CO2 calculator! \n Please log in!</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="login_button">Login</string>
+    <string name="sign_up_button">Sign Up</string>
+    <string name="login_slogan">Log in to make a change!</string>
+    <string name="logged_in">You are logged in as: %s</string>
+    <string name="logged_out">Not Logged in</string>
+    <string name="remember_me">Remember Me</string>
+
+    <string name="user_icon_picking">Pick Your Profile Icon!</string>
+
+    <string name="create_account">Create your account</string>
+
+    <string name="account_overview">Account Overview</string>
+    <string name="user_id">User ID:</string>
+    <string name="user_real_name">Name:</string>
+    <string name="user_email">Email:</string>
+    <string name="city">City/Area:</string>
+    <string name="pledged_amount">Pleadged Amount:</string>
+
+    <string name="city_filter">City Filter:</string>
+
+    <string name="adding_food_activity_title">I eat&#8230;</string>
+
+    <string name="beef">Beef</string>
+    <string name="beef1">High amount</string>
+    <string name="beef2">Medium amount</string>
+    <string name="beef3">Low amount</string>
+    <string name="beef4">None</string>
+
+    <string name="lamb">Lamb</string>
+    <string name="lamb1">More</string>
+    <string name="lamb2">Average</string>
+    <string name="lamb3">Less</string>
+    <string name="lamb4">None</string>
+
+    <string name="chicken">Chicken</string>
+    <string name="chicken1">A lot</string>
+    <string name="chicken2">Not too much</string>
+    <string name="chicken3">A little</string>
+    <string name="chicken4">None</string>
+
+    <string name="fish">Fish</string>
+    <string name="fish1">Venti</string>
+    <string name="fish2">Grande</string>
+    <string name="fish3">Tall</string>
+    <string name="fish4">Drink stopper</string>
+
+    <string name="pork">Pork</string>
+    <string name="pork1">Big Mac</string>
+    <string name="pork2">McChicken</string>
+    <string name="pork3">Jr. Chicken</string>
+    <string name="pork4">Ketchup packet</string>
+
+    <string name="egg">Eggs</string>
+    <string name="egg1">Grandpa</string>
+    <string name="egg2">Teen</string>
+    <string name="egg3">Baby</string>
+    <string name="egg4">Root beer</string>
+
+    <string name="veggie">Veggies</string>
+    <string name="veggie1">King size</string>
+    <string name="veggie2">Queen size</string>
+    <string name="veggie3">Twin size</string>
+    <string name="veggie4">Just the frame</string>
+
+    <string name="bread">Bread</string>
+    <string name="bread1">Burj Khalifa</string>
+    <string name="bread2">Big Ben</string>
+    <string name="bread3">Your house</string>
+    <string name="bread4">Below sea level</string>
+    <string name="add_food_button_text">Add Food!</string>
+
+    <string name="result_greeting">
+        Phew! You made it through. I was worried  that we\'d need to ask clippy to help.
+        On the bright side, I\'ve got some results for you:
+    </string>
+    <string name="result_emission">
+        Here\'s how we estimate the greenhouse gas emissions are split from the production of
+        various food groups.
+    </string>
+    <string name="result_toggle_numbers">Toggle Numbers!</string>
+    <string name="result_no_carbon">
+        You eat nothing? Maybe you are dead? A Vampire?
+    </string>
+    <string name="result_blood">Blood!</string>
+    <string name="result_low_carbon">
+        Good News! The greenhouse gas emissions required to produce your diet (%s) are very low
+        compared to the average vancouver resident (%s)!
+    </string>
+    <string name="result_average_carbon">
+        The greenhouse gas emissions required to produce your diet (%s) are similar to the average
+        Vancouver resident (%s).
+    </string>
+    <string name="result_high_carbon">
+        The greenhouse gas emissions required to produce your diet (%s) are higher than the average
+        Vancouver resident (%s).
+    </string>
+    <string name="result_get_suggestion">Get Suggestions</string>
+
+    <string name="suggestion_greeting">
+        <b>Hey! Listen!</b>\nWanna help save the planet?\n<small>(We had a group decision...
+        Navi is more helpful)</small>
+    </string>
+    <string name="suggestion_small">
+        To save %s\nI\'d suggest eating a bit less %s \n and more %s\n
+    </string>
+    <string name="suggestion_medium">
+        To save %s\nI\'d suggest eating less %s \n and more %s\n
+    </string>
+    <string name="suggestion_large">
+        To save %s\nI\'d suggest eating a lot less %s \n and more %s\n
+    </string>
+    <string name="suggestion_navi">
+        Hmm, is that a deku stick?\n
+        <small>(don\'t worry, clippy is ok, probably...)</small>
+    </string>
+    <string name="suggestion_filler">
+        Some text will show up, once you toggle
+    </string>
+    <string name="suggestion_trees">We\'d need to plant %s trees to offset that amount of carbon</string>
+    <string name="suggestion_all_vancouver">
+        If everyone in Vancouver also saved %s, the total saved would be %s of CO2e
+    </string>
+    <string name="logo_content_description">Green Challenge Logo</string>
+
+    <string-array name="ingredient_name">
+        <item>Beef</item>
+        <item>Lamb</item>
+        <item>Chicken</item>
+        <item>Fish</item>
+        <item>Pork</item>
+        <item>Eggs</item>
+        <item>Veggies</item>
+        <item>Bread</item>
+    </string-array>
+
+    <string-array name="ingredient_filter">
+        <item>-default-</item>
+        <item>Beef</item>
+        <item>Lamb</item>
+        <item>Chicken</item>
+        <item>Fish</item>
+        <item>Pork</item>
+        <item>Eggs</item>
+        <item>Veggies</item>
+        <item>Bread</item>
+    </string-array>
+
+    <string-array name="carbon_coefficient">
+        <item>27.0</item> <!--beef-->
+        <item>39.2</item> <!--lamb-->
+        <item>6.9</item> <!--chicken-->
+        <item>11.9</item> <!--fish-->
+        <item>12.1</item> <!--pork-->
+        <item>4.8</item> <!--eggs-->
+        <item>2.0</item> <!--veg-->
+        <item>2.7</item> <!--bread-->
+    </string-array>
+
+    <string-array name="annual_average_consumption"> <!-- kg / year-->
+        <item>25</item> <!--beef-->
+        <item>1</item> <!--lamb-->
+        <item>33</item> <!--chicken-->
+        <item>9</item> <!--fish-->
+        <item>21</item> <!--pork-->
+        <item>10</item> <!--240 eggs @40g each-->
+        <item>40</item> <!--veg-->
+        <item>32</item> <!--bread-->
+    </string-array>
+
+    <string-array name="city_array">
+        <item>Lower Mainland</item>
+        <item>Abbotsford</item>
+        <item>Burnaby</item>
+        <item>Coquitlam</item>
+        <item>Delta</item>
+        <item>Langley</item>
+        <item>Maple Ridge</item>
+        <item>New Westminster</item>
+        <item>Richmond</item>
+        <item>Surrey</item>
+        <item>Vancouver</item>
+        <item>West/North Vancouver</item>
+    </string-array>
+
+    <string name="community_other_pledge">%s has pledged to save %s</string>
+    <string name="participants_text">Number of Participants:</string>
+    <string name="participants_number">12</string>
+    <string name="total_pledged_text">Total CO2 Reduction:</string>
+    <string name="total_pledged_number">240</string>
+    <string name="our_community">Our Community</string>
+    <string name="trees_planted_text"> = Trees Planted:</string>
+    <string name="trees_planted_number">20</string>
+    <string name="avg_pledged_text">Average Amount Pledged:</string>
+    <string name="avg_pledged_number">20</string>
+    <string name="other_members">Others In The Community:</string>
+    <string name="kgs">KGs</string>
+
+    <string name="title_activity_suggestion">SuggestionActivity</string>
+    <string name="title_activity_google_sign_in">GoogleSignInActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <string name="welcome_main_menu">Welcome to the Greener Vancouver Project!</string>
+
+    <string name="display_name_prompt">User Name: </string>
+    <string name="city_prompt">City: </string>
+    <string name="email_prompt">Email: </string>
+    <string name="request_token">729621741617-a8mmkn2ankbokmmnnoe5ur5m6f0d0ke8.apps.googleusercontent.com</string>
+
+    <string name="go_to_my_meals">GO TO MY MEALS</string>
+    <string name="facebook_application_id">337483050352224</string>
+    <string name="facebook_login_protocol_scheme">fb337483050352224</string>
+    <string name="restaurant_title1">~Meal 1~</string>
+    <string name="restaurant_title2">~Meal 2~</string>
+    <string name="restaurant_title3">~Meal 3~</string>
+    <string name="restaurant_name">Restaurant Name: </string>
+    <string name="meal_name">Meal Name:</string>
+    <string name="main_ingredient">Main Ingredient: </string>
+    <string name="second_ingredient">Second Ingredient: </string>
+    <string name="third_ingredient">Third Ingredient: </string>
+    <string name="share_location_text">Share Location? </string>
+    <string name="description_text">Describe Your Meal: </string>
+    <string name="add_photo">Add a Photo: </string>
+    <string name="why_not">WHY NOT ADD A PHOTO?</string>
+    <string name="nice_photo">NICE PHOTO! </string>
+    <string name="delete_meal">DELETE !</string>
+
+    <string-array name="protein_array">
+        <item>Beef</item>
+        <item>Lamb</item>
+        <item>Chicken</item>
+        <item>Fish</item>
+        <item>Pork</item>
+    </string-array>
+
+    <string name="pledge">I Pledge: </string>
+    <string name="pledge_radio_button_3">A TON! (Literally)</string>
+    <string name="pledge_radio_button_2">A Decent Amount</string>
+    <string name="pledge_radio_button_1">A Little At A Time</string>
+    <string name="pledge_radio_button_0">Nothing. Wahaha!</string>
+    <string name="pledge_button_text">PLEDGE!</string>
+    <string name="make_pledge_button_text">MAKE A PLEDGE!</string>
+    <string name="pledge_share">PLEDGE AND SHARE!</string>
+    <string name="title_activity_photo">PhotoActivity</string>
+
+    <string name="view_meal_page_title">Check Out Others\' Meals!</string>
+    <string name="greater_vancouver">Greater Vancouver</string>
+
+    <string name="description_meal">Description: </string>
+
+    <string name="about_activity_challenge_header">The Green Food Challenge</string>
+    <string name="about_activity_challenge_text">
+        This challenge aims to raise awareness about the impact of our diets on the environment
+        and offer some suggestions on possible changes. 20% of a person\'s consumption based
+        greenhouse gas emissions come from food.
+    </string>
+    <string name="about_activity_C02e_header">What is C0<sub><small>2</small></sub>e?</string>
+    <string name="about_activity_C02e_text">
+        Greenhouse gases contribute to climate change. The most discussed is carbon dioxide, but
+        methane and nitrous oxide are also GHGs. In order to measure their impact, carbon dioxide
+        equivalents (C02e) is used.
+        For food production, the most common gas is methane.
+    </string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- https://unsplash.com/photos/2mKYEVGA4jE  BACKGROUND -->
+</resources>

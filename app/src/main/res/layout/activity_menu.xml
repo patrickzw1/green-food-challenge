@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:background="@drawable/background">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_mcd"/>
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_main_menu"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:id="@+id/menu_add_food"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:src="@drawable/addfood"
+            android:layout_weight="5"/>
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/community_button_menu"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:src="@drawable/community"
+            android:layout_weight="5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/about_button_menu"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:src="@drawable/about"
+            android:layout_weight="5"/>
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/login_button_menu"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:src="@drawable/login"
+            android:layout_weight="5"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

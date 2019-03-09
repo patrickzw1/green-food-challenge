@@ -1,0 +1,89 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="GreenHeading" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/themeGreen</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="GreenHeadingSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/themeGreen</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="BlackText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#000000</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+    </style>
+
+    <style name="YellowText" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">#FFCC00</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+    </style>
+
+    <style name="GreenText" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/themeGreen</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+    </style>
+
+    <style name="RedText" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+    </style>
+
+    <style name="NiceButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:backgroundTint">@color/themeGreen</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="NiceButtonRed" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:backgroundTint">#FF0000</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="RoundedFrame">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/frame</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <style name="SquareRounded" parent="RoundedFrame">
+        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_width">200dp</item>
+    </style>
+
+    <style name="RectangleShortRounded" parent="RoundedFrame">
+        <item name="android:layout_height">99dp</item>
+        <item name="android:layout_width">400dp</item>
+    </style>
+
+    <style name="RectangleTallRounded" parent="RoundedFrame">
+        <item name="android:layout_height">180dp</item>
+        <item name="android:layout_width">400dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PledgeFragment"
+    android:fillViewport="true"
+    android:background="@drawable/background">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/suggestionFirstBox"
+            style="@style/RectangleShortRounded"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/SuggestionQuestion"
+                style="@style/GreenHeadingSmall"
+                android:layout_width="280dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/suggestion_greeting"
+                app:layout_constraintEnd_toStartOf="@+id/clippyImage2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/naviImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="@string/result_greeting"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/navi" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/pledgeRadioGroup"
+            style="@style/RoundedFrame"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toEndOf="@id/guideline1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/suggestionFirstBox">
+
+            <RadioButton
+                android:id="@+id/pledge3"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:buttonTint="@color/themeGreen"
+                android:text="@string/pledge_radio_button_3"
+                android:textColor="@color/themeGreen"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/pledge2"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:buttonTint="@color/themeGreen"
+                android:text="@string/pledge_radio_button_2"
+                android:textColor="@color/themeGreen"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/pledge1"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:buttonTint="@color/themeGreen"
+                android:text="@string/pledge_radio_button_1"
+                android:textColor="@color/themeGreen"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/pledge0"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:buttonTint="@color/themeGreen"
+                android:text="@string/pledge_radio_button_0"
+                android:textColor="@color/themeGreen"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/suggestionChart"
+            style="@style/RoundedFrame"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toStartOf="@id/guideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/suggestionFirstBox" />
+
+        <LinearLayout
+            android:id="@+id/suggestionSecondBox"
+            style="@style/RectangleShortRounded"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/suggestionChart">
+
+            <ImageView
+                android:id="@+id/naviImage2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/navi" />
+
+            <TextView
+                android:id="@+id/reduceSuggestionText"
+                style="@style/GreenHeadingSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/suggestion_navi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/suggestionCarbonSaving"
+            style="@style/RoundedFrame"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:text="@string/suggestion_filler"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/suggestionSecondBox" />
+
+        <TextView
+            android:id="@+id/suggestionTreeOffset"
+            style="@style/RoundedFrame"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:text="@string/suggestion_filler"
+            app:layout_constraintStart_toEndOf="@id/guideline1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/suggestionSecondBox" />
+
+        <Button
+            android:id="@+id/pledge_button"
+            style="@style/NiceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/make_pledge_button_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/suggestionTreeOffset" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="603dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintGuide_begin="97dp"
+            app:layout_constraintGuide_percent=".5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

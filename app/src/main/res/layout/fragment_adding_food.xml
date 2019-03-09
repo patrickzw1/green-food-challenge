@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fragments.AddingFoodFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#F3EEEA"
+        android:orientation="horizontal">
+
+        <!--<ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/back" />-->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/adding_food_activity_title"
+            android:textColor="#000000"
+            android:background="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerView"
+        android:background="@drawable/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/beef"
+                    android:scaleType="fitXY" />
+
+                <RadioGroup
+                    android:id="@+id/beefRadioGroup"
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/box"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/beef"
+                        android:textColor="#000000"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/beefRadio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#000000"
+                        android:text="@string/beef1"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/beefRadio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#000000"
+                        android:text="@string/beef2"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/beefRadio3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#000000"
+                        android:text="@string/beef3"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/beefRadio4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#000000"
+                        android:text="@string/beef4"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <RadioGroup
+                    android:id="@+id/lambRadioGroup"
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/box"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/lamb"
+                        android:textColor="#000000"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/lambRadio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#000000"
+                        android:text="@string/lamb1"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/lambRadio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#000000"
+                        android:text="@string/lamb2"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/lambRadio3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#000000"
+                        android:text="@string/lamb3"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/lambRadio4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#000000"
+                        android:text="@string/lamb4"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/lamb"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/chicken"
+                    android:scaleType="fitXY" />
+
+                <RadioGroup
+                    android:id="@+id/chickenRadioGroup"
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/box"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/chicken"
+                        android:textColor="#000000"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/chickenRadio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chicken1"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/chickenRadio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chicken2"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/chickeRadio3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chicken3"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/chickeRadio4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chicken4"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <RadioGroup
+                    android:id="@+id/fishRadioGroup"
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/starbucks"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Fish"
+                        android:textColor="#036635"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/fishRadio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#036635"
+                        android:text="@string/fish1"
+                        android:textColor="#036635"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/fishRadio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#036635"
+                        android:text="@string/fish2"
+                        android:textColor="#036635"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/fishRadio3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#036635"
+                        android:text="@string/fish3"
+                        android:textColor="#036635"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/fishRadio4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#036635"
+                        android:text="@string/fish4"
+                        android:textColor="#036635"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/fish"
+                    android:scaleType="fitXY" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/pork"
+                    android:scaleType="fitXY" />
+
+                <RadioGroup
+                    android:id="@+id/porkRadioGroup"
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/mcdonalds"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="PORK"
+                        android:textColor="#FF0000"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/porkRadio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#FFFF00"
+                        android:text="@string/pork1"
+                        android:textColor="#FFFF00"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/porkRadio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#FF0000"
+                        android:text="@string/pork2"
+                        android:textColor="#FF0000"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/porkRadio3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#FFFF00"
+                        android:text="@string/pork3"
+                        android:textColor="#FFFF00"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/porkRadio4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#FF0000"
+                        android:text="@string/pork4"
+                        android:textColor="#FF0000"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <RadioGroup
+                    android:id="@+id/eggRadioGroup"
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/aandw"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:buttonTint="#FFA500"
+                        android:text="EGG"
+                        android:textColor="#FFA500"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/eggRadio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#FFA500"
+                        android:text="@string/egg1"
+                        android:textColor="#FFA500"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/eggRadio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#654321"
+                        android:text="@string/egg2"
+                        android:textColor="#654321"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/eggRadio3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#654321"
+                        android:text="@string/egg3"
+                        android:textColor="#654321"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/eggRadio4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#FFA500"
+                        android:text="@string/egg4"
+                        android:textColor="#FFA500"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/egg"
+                    android:scaleType="fitXY" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/veg"
+                    android:scaleType="fitXY" />
+
+                <RadioGroup
+                    android:id="@+id/vegRadioGroup"
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/sleepcountry"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:buttonTint="#FF0000"
+                        android:text="@string/veggie"
+                        android:textColor="#FF0000"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+
+                    <RadioButton
+                        android:id="@+id/veggieRadio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#FF0020"
+                        android:text="@string/veggie1"
+                        android:textColor="#FF0020"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/veggieRadio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#FF0040"
+                        android:text="@string/veggie2"
+                        android:textColor="#FF0040"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/veggieRadio3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#FF0060"
+                        android:text="@string/veggie3"
+                        android:textColor="#FF0060"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/veggieRadio4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#FF0080"
+                        android:text="@string/veggie4"
+                        android:textColor="#FF0080"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <RadioGroup
+                    android:id="@+id/breadRadioGroup"
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/city"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:buttonTint="#FF69B4"
+                        android:text="@string/bread"
+                        android:textColor="#FF69B4"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/breadRadio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#FF0000"
+                        android:text="@string/bread1"
+                        android:textColor="#FF0000"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/breadRadio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#FFFF00"
+                        android:text="@string/bread2"
+                        android:textColor="#FFFF00"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/breadRadio3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#00FF00"
+                        android:text="@string/bread3"
+                        android:textColor="#00FF00"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/breadRadio4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#0000FF"
+                        android:text="@string/bread4"
+                        android:textColor="#0000FF"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/bread"
+                    android:scaleType="fitXY" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:paddingTop="5dp"
+                android:id="@+id/nextImageView"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/addfood" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
